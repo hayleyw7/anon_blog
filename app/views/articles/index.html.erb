@@ -10,11 +10,9 @@
   <% @articles.each do |article| %>
     <li>
 
-    <! –– # links to show.html.erb ––>
-
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %>
-      </a>
+    <! –– # renders article title as a link to show.html.erb ––>
+    
+    <%= link_to article.title, article %>
       
     </li>
   <% end %>
