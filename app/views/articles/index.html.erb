@@ -1,1 +1,14 @@
-<h1>Hello World!</h1>
+<! –– # mix of html & erb ––>
+
+<h1>Articles</h1>
+
+<! –– # `<% %>` = "evaluate enclosed ruby code & output returned value" ––>
+
+<ul>
+
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>

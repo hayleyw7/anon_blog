@@ -10,7 +10,7 @@ class CreateArticles < ActiveRecord::Migration[7.0]
       t.string :title
       t.text :body
 
-      # 2 columns auto-created: `created_at` & `updated_at ``
+      # 2 columns auto-created: `created_at` & `updated_at`
 
       t.timestamps
     end
