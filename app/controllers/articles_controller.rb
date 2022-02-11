@@ -40,9 +40,9 @@ class ArticlesController < ApplicationController
   def create
 
     # instantiates new article with values for title/body
-      # `...` are dummy values that'll be replaced
+      # uses `article_params` to fill in params
 
-    @article = Article.new(title: "...", body: "...")
+    @article = Article.new(article_params)
 
     # save new article
 
@@ -56,7 +56,19 @@ class ArticlesController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
-    
+
   end
+
+  private
+
+    # submitted form data + route params passed into single "hash"
+      # access via `params[:article][:title]`, `params[:article][:body]`, etc
+
+    def article_params
+
+      # filter params
+      
+      params.require(:article).permit(:title, :body)
+    end
 
 end

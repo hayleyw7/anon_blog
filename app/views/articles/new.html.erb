@@ -1,0 +1,21 @@
+<! –– # rendered via `def new` in `controllers/articles_controller.rb` ––>
+
+<h1>New Article</h1>
+
+<! –– # instantiate form builder (built-in process to create full html form) ––>
+
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
