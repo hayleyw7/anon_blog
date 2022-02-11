@@ -26,11 +26,16 @@ ul {
   text-align: center;
   /* list-style-position: inside; */
   list-style: none;
-  margin-left: -2.5rem;
+  margin: 0.2rem 0 0 -2.4rem;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  /* transform: scale(1.5); */
+  color: maroon;
 }
 
 /* create post page */
