@@ -3,11 +3,11 @@
 # inside this controller are "actions" (ex: `index`, `show`)
 
   # by default (aka when an action doesn't explicitly render a "view" or trigger an http response), rails renders the "view" (html/erb/slim file) that matches the name of the "controller"/"action":
-    # (ex: `app/views/${controller}/${action}.html.erb`)
+    # (ex: `views/${controller}/${action}.html.erb`)
 
 class ArticlesController < ApplicationController
 
-  # by default, `def index` renders app/views/articles/index.html.erb
+  # `def index` renders views/articles/index.html.erb
 
   def index
 
@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
     
   end
 
-  # by default `def show` renders app/views/articles/show.html.erb
+  # `def show` renders views/articles/show.html.erb
 
   def show
 
@@ -25,6 +25,38 @@ class ArticlesController < ApplicationController
 
     @article = Article.find(params[:id])
 
+  end
+
+  # `def new` renders views/articles/new.html.erb
+
+  def new
+
+    # instantiates new article but doesn't save it
+
+    @article = Article.new
+
+  end
+
+  def create
+
+    # instantiates new article with values for title/body
+      # `...` are dummy values that'll be replaced
+
+    @article = Article.new(title: "...", body: "...")
+
+    # save new article
+
+    # if save successful, redirect to article page ("http://localhost:3000/articles/#{@article.id}")"
+
+    if @article.save
+      redirect_to @article
+
+    # if not, redisplay form (render "views/articles/new.html.erb") + status code "422 Unprocessable Entity".
+
+    else
+      render :new, status: :unprocessable_entity
+    end
+    
   end
 
 end
