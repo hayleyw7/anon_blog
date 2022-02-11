@@ -1,4 +1,73 @@
+/* general */
+
 body {
   font-family: Arial;
-  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #E8E8E8;
+}
+
+div {
+  margin: 0.1rem 0 0.1rem 0;
+  padding-bottom: 1rem;
+}
+
+/* header */
+
+h1 {
+  color: green;
+}
+
+/* home page */
+
+ul {
+  text-align: center;
+  /* list-style-position: inside; */
+  list-style: none;
+  margin-left: -2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* create post page */
+
+#article_title,
+#article_body {
+  margin-top: 0.4rem;
+  padding: 0.5rem;
+  width: 25rem;
+  border: 0.07rem solid black;
+}
+
+#article_title {
+  border-radius: 0.6rem;
+}
+
+
+#article_body {
+  height: 20rem;
+  border-radius: 0.7rem;
+}
+
+label, a {
+  font-weight: bold;
+  color: purple;
+}
+
+input[name="commit"] {
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  padding: 0.5rem;
+}
+
+.field_with_errors:first-child {
+  margin-bottom: -2.25rem;
 }
