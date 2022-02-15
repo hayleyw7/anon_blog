@@ -14,3 +14,24 @@
   } %></li>
 
 </ul>
+
+<! –– # add "creat new comment" form to Article show page (calls "CommentsController create action") ––>
+
+<h2>Add a comment:</h2>
+
+<! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
+<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+
+  <p>
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
