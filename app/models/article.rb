@@ -1,7 +1,11 @@
 class Article < ApplicationRecord
 
-# declares title value must be present (via `presence: true`)
-  # default for string - value must be >= 1 char
+  # other side of Comment model assocation (models/comment.rb)
+
+  has_many :comments
+
+  # declares title value must be present (via `presence: true`)
+    # default for string - value must be >= 1 char
 
   validates :title, presence: true
 

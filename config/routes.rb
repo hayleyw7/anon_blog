@@ -16,6 +16,11 @@ Rails.application.routes.draw do
     # helper names = "prefix" (ex: `root`, `articles`, `new_article`) + suffix (url/path)
       # (ex: when given an article, article_path helper = "/articles/#{article.id}")
 
-  resources :articles
+  resources :articles do
+
+    # create comments as nested resource w/i articles
+    resources :comments
+
+  end
 
 end

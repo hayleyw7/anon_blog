@@ -2,7 +2,7 @@
 
 class Comment < ApplicationRecord
 
-  # set-up "Active Record" association
+  # make each comment belond to specific Article (set-up "Active Record" association)
   belongs_to :article
 
 end
