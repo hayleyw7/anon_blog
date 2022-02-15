@@ -1,1 +1,0 @@
-# Migration to create the comments table in your database (your name will include a different timestamp)

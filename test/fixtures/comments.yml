@@ -1,2 +1,11 @@
-# Sample comments for use in testing
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+one:
+  commenter: MyString
+  body: MyText
+  article: one
+
+two:
+  commenter: MyString
+  body: MyText
+  article: two
