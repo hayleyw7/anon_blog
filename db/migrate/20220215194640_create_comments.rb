@@ -11,7 +11,7 @@ class CreateComments < ActiveRecord::Migration[7.0]
       # `:references` keyword - special data type that creates new db column w/ model name + `_id` 
         # to learn more, analyze db/schema.rb after running the migration
 
-       #creates an integer column called `article_id` + index + `foreign_key` constraint pointing to id column of articles table
+       # creates an integer column called `article_id` + index + `foreign_key` constraint pointing to id column of articles table
 
       t.references :article, null: false, foreign_key: true
 
