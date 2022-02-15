@@ -65,6 +65,18 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # delete article
+  def destroy
+    # fetch article
+    @article = Article.find(params[:id])
+
+    # call "destroy" on fetched article
+    @article.destroy
+
+    # redirect browser to root path w/ status code "303"
+    redirect_to root_path, status: :see_other
+  end
+
   private
 
     # submitted form data + route params passed into single "hash"
