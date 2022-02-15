@@ -38,23 +38,42 @@ a:hover {
   color: maroon;
 }
 
-/* create post page */
+/* create post page (& comments) */
 
 #article_title,
-#article_body {
+#article_body,
+#comment_commenter {
   margin-top: 0.4rem;
   padding: 0.5rem;
   width: 25rem;
   border: 0.07rem solid black;
 }
 
-#article_title {
+#article_title,
+#comment_commenter {
   border-radius: 0.6rem;
 }
 
 #article_body {
   height: 20rem;
   border-radius: 0.7rem;
+}
+
+#comment_commenter {
+  width: 19rem;
+}
+
+#comment_body {
+  border-radius: 0.65rem;
+  height: 5rem;
+  width: 20rem;
+}
+
+h2 {
+  color: darkorange;
+  font-size: 20px;
+  border-top: 0.5rem solid white;
+  padding-top: 1rem;
 }
 
 label, a {
@@ -72,6 +91,15 @@ input[name="commit"] {
   padding: 0.5rem;
 }
 
+
 .field_with_errors:first-child {
   margin-bottom: -2.25rem;
 }
+
+/* comments */
+
+/* #comment_commenter {
+  margin: 0.35rem;
+  border-radius: 0.7rem;
+  border: 0.07rem solid black;
+} */
