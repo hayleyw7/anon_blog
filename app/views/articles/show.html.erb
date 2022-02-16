@@ -51,11 +51,11 @@
 
         <p class='comment-input-container'>
           <%= form.label :commenter, 'Name' %><br>
-          <%= form.text_field :commenter %>
+          <%= form.text_field :commenter, :required => 'required' %>
         </p>
         <p class='comment-input-container'>
           <%= form.label :body, 'Comment' %><br>
-          <%= form.text_area :body %>
+          <%= form.text_area :body, :required => 'required' %>
         </p>
         <p>
           <%= form.submit %>

@@ -149,7 +149,7 @@ ul {
 
 /* create post page errors */
 
-.field_with_errors:first-child {
+/* .field_with_errors:first-child {
   margin-bottom: -2rem;
 }
 
@@ -161,8 +161,7 @@ div.error-2 {
 
 div.error-2 {
   margin-top: -1rem;
-  /* border: 1px solid black; */
-}
+} */
 
 /* comment form */
 
@@ -181,7 +180,7 @@ label[for="comment_body"] {
   /* font-size: 20px; */
   font-size: 16px;
   /* padding-top: 1rem; */
-  display: none;
+  /* display: none; */
 }
 
 .add-comment-section {

@@ -10,18 +10,12 @@
   <div class='new-article-form'>
     <div>
       <%= form.label :title %><br>
-      <%= form.text_field :title %>
-      <% @article.errors.full_messages_for(:title).each do |message| %>
-        <div class="error-1"><%= message %>.</div>
-      <% end %>
+      <%= form.text_field :title, :required => 'required' %>
     </div>
 
     <div>
       <%= form.label :body %><br>
-      <%= form.text_area :body %><br>
-      <% @article.errors.full_messages_for(:body).each do |message| %>
-        <div class="error-2"><%= message %>.</div>
-      <% end %>
+      <%= form.text_area :body, :required => 'required' %><br>
     </div>
 
     <div>
