@@ -140,7 +140,8 @@ h1 {
   font-size: 20px;
 }
 
-.everything-comments {
+.everything-comments,
+.new-article-form {
   background-color: #E8E8E8;
   margin: 1rem 5rem 1rem 5rem;
   padding: 0;
@@ -149,4 +150,12 @@ h1 {
 
 .comments-box {
   margin-bottom: 1rem;
+}
+
+.new-article-form {
+  padding: 1.2rem 0.25rem 0.5rem 0.25rem;
+}
+
+#article_body {
+  font-family: Arial;
 }
