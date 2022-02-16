@@ -6,7 +6,8 @@ body {
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  background-color: #E8E8E8;
+  /* background-color: #E8E8E8; */
+  margin: 0;
 }
 
 div {
@@ -53,7 +54,7 @@ a:hover {
   margin-top: 0.4rem;
   padding: 0.5rem;
   width: 25rem;
-  border: 0.07rem solid black;
+  border: 0;
 }
 
 #article_title,
@@ -95,27 +96,57 @@ input[name="commit"] {
 h2 {
   color: darkorange;
   font-size: 20px;
-  border-top: 0.5rem solid white;
-  padding-top: 1rem;
+  /* border-top: 0.5rem solid white; */
+  /* padding-top: 1rem; */
 }
 
-/* ul {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-
-.comment {
+.comment,
+.article-actions {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
- /* text-align: center; */
+  /* text-align: center; */
   justify-content: center;
 }
 
 .commenter,
 .comment-body {
   margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+label[for="comment_commenter"],
+label[for="comment_body"]
+ {
+  color: darkorange;
+}
+
+.comment-form {
+  color: darkorange;
+  font-size: 20px;
+  border-top: 0.25rem solid white;
+  font-size: 16px;
+  /* padding-top: 1rem; */
+}
+
+h1 {
+  background-color: #E8E8E8;
+  margin: 1rem 5rem 1rem 5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.article-name-list {
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+.everything-comments {
+  background-color: #E8E8E8;
+  margin: 1rem 5rem 1rem 5rem;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+.comments-box {
+  margin-bottom: 1rem;
 }

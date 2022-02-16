@@ -1,52 +1,58 @@
 <! –– # rendered via `def index` in `controllers/articles_controller.rb` ––>
 
-<h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+  <h1><%= @article.title %></h1>
 
-<ul>
+  <p><%= @article.body %></p>
 
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+  <ul class='article-actions'>
 
-  <li><%= link_to "Delete", article_path(@article), data: {
-    turbo_method: :delete,
-    turbo_confirm: "Are you sure?"
-  } %></li>
+    <li><%= link_to "Edit", edit_article_path(@article) %></li>
 
-</ul>
+    <li><%= link_to "Delete", article_path(@article), data: {
+      turbo_method: :delete,
+      turbo_confirm: "Are you sure?"
+    } %></li>
+
+  </ul>
+
 
 <! –– # display comments ––>
 
-<h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-  <article class='comment'>
-    <p class='commenter'>
-      <strong><%= comment.commenter %>:</strong>
-    </p>
+<section class='everything-comments'>
+  <article class='comments-box'>
+    <h2>Comments</h2>
+    <% @article.comments.each do |comment| %>
+      <article class='comment'>
+        <p class='commenter'>
+          <strong><%= comment.commenter %>:</strong>
+        </p>
 
-    <p class='comment-body'>
-      <%= comment.body %>
-    </p>
+        <p class='comment-body'>
+          <%= comment.body %>
+        </p>
+      </article>
+    <% end %>
   </article>
-<% end %>
 
-<! –– # add "create new comment" form (calls "CommentsController create action") ––>
+  <! –– # add "create new comment" form (calls "CommentsController create action") ––>
 
-<h2>Add Comment</h2>
+  <! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
+  <%= form_with model: [ @article, @article.comments.build ] do |form| %>
 
-<! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
-<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+    <div class="comment-form">
+      <p class='comment-input-container'>
+        <%= form.label :commenter, 'Name' %><br>
+        <%= form.text_field :commenter %>
+      </p>
+      <p class='comment-input-container'>
+        <%= form.label :body, 'Comment' %><br>
+        <%= form.text_area :body %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    </div>
 
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-
-<% end %>
+  <% end %>
+</section>
