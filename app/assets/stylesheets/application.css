@@ -17,8 +17,9 @@ div {
 
 /* header */
 
-h1 {
-  color: green;
+h2 {
+  color: white;
+  background-color: purple;
 }
 
 /* home page */
@@ -42,7 +43,11 @@ a {
 
 a:hover {
   /* transform: scale(1.5); */
-  color: maroon;
+  color: green;
+}
+
+input[type="submit"]:hover {
+  background-color: purple;
 }
 
 /* create post page (& comments) */
@@ -93,7 +98,7 @@ input[name="commit"] {
   height: 5rem;
 }
 
-h2 {
+h3 {
   color: darkorange;
   font-size: 20px;
   /* border-top: 0.5rem solid white; */
@@ -128,11 +133,12 @@ label[for="comment_body"]
   /* padding-top: 1rem; */
 }
 
-h1 {
-  background-color: #E8E8E8;
+h2 {
+  background-color: purple;
   margin: 1rem 5rem 1rem 5rem;
   padding: 0.5rem;
   border-radius: 1rem;
+  font-size: 32px;
 }
 
 .article-name-list {
@@ -156,6 +162,20 @@ h1 {
   padding: 1.2rem 0.25rem 0.5rem 0.25rem;
 }
 
-#article_body {
+#article-body {
   font-family: Arial;
+}
+
+.article-container {
+  background-color: 	#C1E1C1;
+  margin: 0rem 5rem 0rem 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  background-color: green;
+  margin: 0 0 0.5rem 0;
+  padding: 1rem;
+  color: white;
 }

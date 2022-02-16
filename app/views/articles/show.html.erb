@@ -1,7 +1,9 @@
 <! –– # rendered via `def index` in `controllers/articles_controller.rb` ––>
+<h1>Community Blog</h1>
 
+<h2><%= @article.title %></h2>
 
-  <h1><%= @article.title %></h1>
+<div class='article-container'>
 
   <p><%= @article.body %></p>
 
@@ -15,13 +17,14 @@
     } %></li>
 
   </ul>
+</div>
 
 
 <! –– # display comments ––>
 
 <section class='everything-comments'>
   <article class='comments-box'>
-    <h2>Comments</h2>
+    <h3>Comments</h3>
     <% @article.comments.each do |comment| %>
       <article class='comment'>
         <p class='commenter'>
