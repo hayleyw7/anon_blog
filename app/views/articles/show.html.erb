@@ -43,18 +43,24 @@
   <! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
   <%= form_with model: [ @article, @article.comments.build ] do |form| %>
 
-    <div class="comment-form">
-      <p class='comment-input-container'>
-        <%= form.label :commenter, 'Name' %><br>
-        <%= form.text_field :commenter %>
-      </p>
-      <p class='comment-input-container'>
-        <%= form.label :body, 'Comment' %><br>
-        <%= form.text_area :body %>
-      </p>
-      <p>
-        <%= form.submit %>
-      </p>
+    <div class='add-comment-section'>
+    
+      <button>Add A Comment</button>
+
+      <div class="comment-form">
+
+        <p class='comment-input-container'>
+          <%= form.label :commenter, 'Name' %><br>
+          <%= form.text_field :commenter %>
+        </p>
+        <p class='comment-input-container'>
+          <%= form.label :body, 'Comment' %><br>
+          <%= form.text_area :body %>
+        </p>
+        <p>
+          <%= form.submit %>
+        </p>
+      </div>
     </div>
 
   <% end %>
