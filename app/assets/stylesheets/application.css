@@ -106,3 +106,16 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 } */
+
+.comment {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+ /* text-align: center; */
+  justify-content: center;
+}
+
+.commenter,
+.comment-body {
+  margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+}

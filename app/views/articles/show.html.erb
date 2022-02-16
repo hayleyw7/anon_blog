@@ -19,20 +19,20 @@
 
 <h2>Comments</h2>
 <% @article.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
+  <article class='comment'>
+    <p class='commenter'>
+      <strong><%= comment.commenter %>:</strong>
+    </p>
 
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
+    <p class='comment-body'>
+      <%= comment.body %>
+    </p>
+  </article>
 <% end %>
 
 <! –– # add "create new comment" form (calls "CommentsController create action") ––>
 
-<h2>Add a comment:</h2>
+<h2>Add Comment</h2>
 
 <! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
