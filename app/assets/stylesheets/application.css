@@ -1,3 +1,5 @@
+/*********** WHOLE SITE ***********/
+
 /* general */
 
 body {
@@ -15,25 +17,38 @@ div {
   padding-bottom: 1rem;
 }
 
-/* header */
+ul {
+  list-style: none;
+  margin: 0.2rem 0 0 -2.4rem;
+  text-align: center;
+}
+
+/* headings */
+
+h1 {
+  background-color: #BA3F1D;
+  margin: 0 0 0.5rem 0;
+  padding: 1rem;
+  color: white;
+}
 
 h2 {
   color: white;
-  background-color: purple;
+  background-color: #80A1C1;
+  margin: 1rem 5rem 1rem 5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 32px;
 }
 
-/* home page */
-
-ul {
-  text-align: center;
-  /* list-style-position: inside; */
-  list-style: none;
-  margin: 0.2rem 0 0 -2.4rem;
+h3 {
+  color: #A77E58;
+  font-size: 20px;
+  /* border-top: 0.5rem solid white; */
+  /* padding-top: 1rem; */
 }
 
-/* li {
-  padding-bottom: 0.5rem;
-} */
+/* links, buttons, labels */
 
 a {
   text-decoration: none;
@@ -43,14 +58,47 @@ a {
 
 a:hover {
   /* transform: scale(1.5); */
-  color: green;
+  color: #80A1C1;
+}
+
+a,
+label {
+  font-weight: bold;
+  color: #A77E58;
+}
+
+input[name="commit"] {
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background-color: #A77E58;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  padding: 0.5rem;
 }
 
 input[type="submit"]:hover {
-  background-color: purple;
+  background-color: #80A1C1;
 }
 
-/* create post page (& comments) */
+/* lists */
+
+ul {
+  list-style: none;
+  margin: 0.2rem 0 0 -2.4rem;
+  text-align: center;
+}
+
+/*********** PAGES ***********/
+
+/* home page */
+
+.article-name-list {
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+/* create post page, comment list */
 
 #article_title,
 #article_body,
@@ -72,37 +120,9 @@ input[type="submit"]:hover {
   border-radius: 0.7rem;
 }
 
-label, a {
-  font-weight: bold;
-  color: purple;
-}
-
-input[name="commit"] {
-  border-radius: 0.3rem;
-  font-weight: bold;
-  background-color: green;
-  color: white;
-  font-size: 16px;
-  border: 0;
-  padding: 0.5rem;
-}
-
-.field_with_errors:first-child {
-  margin-bottom: -2.25rem;
-}
-
-/* comments */
-
 #comment_body {
   border-radius: 0.65rem;
   height: 5rem;
-}
-
-h3 {
-  color: darkorange;
-  font-size: 20px;
-  /* border-top: 0.5rem solid white; */
-  /* padding-top: 1rem; */
 }
 
 .comment,
@@ -114,48 +134,61 @@ h3 {
   justify-content: center;
 }
 
+.comments-box {
+  margin-bottom: 1rem;
+}
+
+/* create post page errors */
+
+.field_with_errors + div {
+  margin-top: 1.8rem;
+  color: #BA3F1D;
+}
+
+.field_with_errors + div:after {
+  content: ".";
+}
+
+.field_with_errors:nth-child(3) {
+  /* border: 1rem solid black; */
+  margin-bottom: -1.6rem;
+}
+
+.field_with_errors:first-child {
+  margin-bottom: -2.25rem;
+}
+
+.field_with_errors + div:first-child {
+  color: purple;
+}
+
+/* comment form */
+
 .commenter,
 .comment-body {
   margin: 0.5rem 0.25rem 0.5rem 0.25rem;
 }
 
 label[for="comment_commenter"],
-label[for="comment_body"]
- {
-  color: darkorange;
+label[for="comment_body"] {
+  color: #A77E58;
 }
 
 .comment-form {
-  color: darkorange;
+  color: #A77E58;
   font-size: 20px;
   border-top: 0.25rem solid white;
   font-size: 16px;
   /* padding-top: 1rem; */
 }
 
-h2 {
-  background-color: purple;
-  margin: 1rem 5rem 1rem 5rem;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-size: 32px;
-}
-
-.article-name-list {
-  padding-bottom: 1rem;
-  font-size: 20px;
-}
 
 .everything-comments,
 .new-article-form {
-  background-color: #E8E8E8;
+  background-color: #EEE3AB;
   margin: 1rem 5rem 1rem 5rem;
   padding: 0;
   border-radius: 1rem;
-}
-
-.comments-box {
-  margin-bottom: 1rem;
 }
 
 .new-article-form {
@@ -167,15 +200,10 @@ h2 {
 }
 
 .article-container {
-  background-color: 	#C1E1C1;
+  background-color: 	#D9CFC1;
   margin: 0rem 5rem 0rem 5rem;
   padding: 1rem;
   border-radius: 1rem;
 }
 
-h1 {
-  background-color: green;
-  margin: 0 0 0.5rem 0;
-  padding: 1rem;
-  color: white;
-}
+/* purple - #613F75 */
