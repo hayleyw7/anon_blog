@@ -180,7 +180,10 @@ label[for="comment_body"] {
   /* font-size: 20px; */
   font-size: 16px;
   /* padding-top: 1rem; */
-  /* display: none; */
+}
+
+.hidden {
+  display: none;
 }
 
 .add-comment-section {

@@ -45,9 +45,9 @@
 
     <div class='add-comment-section'>
     
-      <button>Add A Comment</button>
+      <button id='addCommentBtn' onclick="showCommentForm()">Add A Comment</button>
 
-      <div class="comment-form">
+      <div class="comment-form hidden" id='commentForm'>
 
         <p class='comment-input-container'>
           <%= form.label :commenter, 'Name' %><br>
@@ -65,3 +65,12 @@
 
   <% end %>
 </section>
+
+<! –– # javascript ––>
+
+<script>
+  const showCommentForm = () => {
+    document.getElementById("commentForm").classList.remove("hidden");
+    document.getElementById("addCommentBtn").classList.add("hidden");
+  }
+</script>
