@@ -63,7 +63,7 @@ h3 {
   padding-right: 0.4rem;
 }
 
-.article-links:hover {
+a:hover {
   /* transform: scale(1.5); */
   color: #BA3F1D;
 }
@@ -250,5 +250,14 @@ h1,
   #comment_commenter,
   #comment_body {
     width: 75%;
+  }
+
+  .comment {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+
+  .commenter {
+    margin-bottom: 0rem;
   }
 }
