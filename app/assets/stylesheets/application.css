@@ -123,7 +123,7 @@ ul {
 #comment_body {
   margin-top: 0.4rem;
   padding: 0.5rem;
-  width: 25rem;
+  width: 50%;
   border: 0;
 }
 
@@ -235,12 +235,16 @@ h1,
   h2,
   .home-list,
   .article-container,
-  .everything-comments {
+  .everything-comments,
+  .new-article-form {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  /* input {
-    width: 1rem;
-  } */
+  #article_title,
+  #article_body,
+  #comment_commenter,
+  #comment_body {
+    width: 75%;
+  }
 }

@@ -8,12 +8,12 @@
 
 <%= form_with model: @article do |form| %>
   <div class='new-article-form'>
-    <div>
+    <div class='new-article-form-sec'>
       <%= form.label :title %><br>
       <%= form.text_field :title, :required => 'required' %>
     </div>
 
-    <div>
+    <div class='new-article-form-sec'>
       <%= form.label :body %><br>
       <%= form.text_area :body, :required => 'required' %><br>
     </div>
