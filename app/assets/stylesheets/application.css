@@ -42,7 +42,7 @@ h2 {
   background-color: #80A1C1;
   margin: 1rem 5rem 1rem 5rem;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   font-size: 36px;
 }
 
@@ -76,13 +76,13 @@ label {
 
 input[name="commit"],
 button {
-  border-radius: 0.3rem;
+  border-radius: 0.6rem;
   font-weight: bold;
   background-color: #A77E58;
   color: white;
   font-size: 16px;
   border: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
 }
 
 input[type="submit"]:hover,
@@ -128,7 +128,7 @@ ul {
 
 #article_title,
 #comment_commenter {
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
 }
 
 #article_body {
