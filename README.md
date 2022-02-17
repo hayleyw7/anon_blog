@@ -1,6 +1,6 @@
 # Anonymous Community Blog
 
-Anonymous Community Blog is an interactive, conceptual art experiment, where anyone online can create, edit, and delete blog posts, as well as leave comments on existing blog posts.
+Anonymous Community Blog is an interactive, conceptual art experiment, where anyone online can create, edit, and delete blog posts, as well as leave comments.
 
 [It can be accessed here.](https://rails-fun.herokuapp.com/)
 
@@ -60,4 +60,4 @@ While back and forward browser buttons work, to quickly return home at any time,
 
 ## Contributors
 
-Project completed by [Hayley Witherell](https://github.com/hayleyskyland)
+Project completed by Hayley Witherell ([work](https://github.com/hayleyskyland)/[personal](https://github.com/hayleyw7))
