@@ -14,7 +14,7 @@ Utilizes Ruby, Rails, CSS, HTML, NPM, Node, & Heroku
 
 Built with Visual Studio Code
 
-[Code stored on GitHub](https://github.com/hayleyskyland/ruby_fun)
+[Code stored on GitHub](https://github.com/hayleyskyland/rails_fun)
 
 ## Access and use website
 
