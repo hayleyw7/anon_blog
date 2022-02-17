@@ -32,10 +32,10 @@ ul {
 h1 {
   background-color: #BA3F1D;
   margin: 0 0 0.5rem 0;
-  padding: 1rem;
+  padding: 1rem 1rem 1.6rem 1rem;
   color: white;
   font-family: "Chalkduster", fantasy;
-  font-size: 30px;
+  font-size: 46px;
 }
 
 h2 {
@@ -44,6 +44,7 @@ h2 {
   margin: 1rem 5rem 1rem 5rem;
   padding: 0.5rem;
   border-radius: 1rem;
+  font-size: 36px;
 }
 
 h3 {
@@ -113,8 +114,6 @@ ul {
   border-radius: 1rem;
 }
 
-
-
 /* create post page, comment list */
 
 #article_title,
@@ -135,6 +134,10 @@ ul {
 #article_body {
   height: 20rem;
   border-radius: 0.7rem;
+}
+
+.article-p {
+  font-size: 20px;
 }
 
 #comment_body {
@@ -212,7 +215,8 @@ label[for="comment_body"] {
   padding: 1.2rem 0.25rem 0.5rem 0.25rem;
 }
 
-#article_body {
+#article_body,
+#comment_body {
   font-family: Arial;
 }
 
