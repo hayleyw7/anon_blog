@@ -230,3 +230,17 @@ h1,
 .title {
   color: white !important;
 }
+
+@media only screen and (max-width: 600px) {
+  h2,
+  .home-list,
+  .article-container,
+  .everything-comments {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* input {
+    width: 1rem;
+  } */
+}
