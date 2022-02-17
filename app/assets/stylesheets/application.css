@@ -30,6 +30,8 @@ h1 {
   margin: 0 0 0.5rem 0;
   padding: 1rem;
   color: white;
+  font-family: "Chalkduster", fantasy;
+  font-size: 30px;
 }
 
 h2 {
