@@ -52,6 +52,7 @@ h3 {
   font-size: 20px;
   /* border-top: 0.5rem solid white; */
   /* padding-top: 1rem; */
+  margin-bottom: 0.5rem;
 }
 
 /* links, buttons, labels */
@@ -145,13 +146,18 @@ ul {
   height: 5rem;
 }
 
-.comment,
 .article-actions {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
-  /* text-align: center; */
   justify-content: center;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .comments-box {
@@ -179,6 +185,10 @@ div.error-2 {
 .commenter,
 .comment-body {
   margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.commenter {
+  margin-bottom: 0;
 }
 
 label[for="comment_commenter"],
@@ -259,6 +269,8 @@ h1,
   .comment {
     flex-direction: column !important;
     justify-content: center;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .commenter {
