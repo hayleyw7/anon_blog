@@ -7,12 +7,12 @@
 
   <ul class='article-actions'>
 
-    <li><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li><%= link_to "Edit", edit_article_path(@article), :class => "article-links" %></li>
 
     <li><%= link_to "Delete", article_path(@article), data: {
       turbo_method: :delete,
       turbo_confirm: "Are you sure?"
-    } %></li>
+    }, :class => "article-links"%></li>
 
   </ul>
 </div>

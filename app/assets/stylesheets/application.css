@@ -55,21 +55,22 @@ h3 {
 
 /* links, buttons, labels */
 
-a {
+.article-links,
+.title {
   text-decoration: none;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
 }
 
-a:hover {
+.article-links:hover {
   /* transform: scale(1.5); */
   color: #BA3F1D;
 }
 
-a,
+.article-links,
 label {
   font-weight: bold;
-  color: #A77E58;
+  color: #A77E58 !important;
 }
 
 input[name="commit"],
@@ -224,3 +225,8 @@ label[for="comment_body"] {
 }
 
 /* purples - #613F75, #60435F */
+
+h1,
+.title {
+  color: white !important;
+}

@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <h1>Anonymous Community Blog</h1>
+    <h1><%= link_to "Anonymous Community Blog", "/", :method => "get", class: "title" %></h1>
     <%= yield %>
   </body>
 </html>
