@@ -26,17 +26,11 @@
 <section class='everything-comments'>
   <article class='comments-box'>
     <h3>Comments</h3>
-    <% @article.comments.each do |comment| %>
-      <article class='comment'>
-        <p class='commenter'>
-          <strong><%= comment.commenter %>:</strong>
-        </p>
 
-        <p class='comment-body'>
-          <%= comment.body %>
-        </p>
-      </article>
-    <% end %>
+    # iterate over @article.comments collection in views/comments/_comment.html.erb, & assign each comment to local var w/ same name as partial (in this case "comment"), which is then available to show in partial
+
+    <%= render @article.comments %>
+    
   </article>
 
   <! –– # add "create new comment" form (calls "CommentsController create action") ––>
