@@ -1,0 +1,31 @@
+<! –– # add "create new comment" form (calls "CommentsController create action") ––>
+
+<! –– # `form_with` call uses an array, which will build a nested route, such as /articles/1/comments ––>
+
+<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+
+  <div class='add-comment-section'>
+  
+    <button id='addCommentBtn' onclick="showCommentForm()">Add A Comment</button>
+
+    <div class="comment-form hidden" id='commentForm'>
+
+      <p class='comment-input-container'>
+        <%= form.label :commenter, 'Name' %><br>
+        <%= form.text_field :commenter, :required => 'required' %>
+      </p>
+
+      <p class='comment-input-container'>
+        <%= form.label :body, 'Comment' %><br>
+        <%= form.text_area :body, :required => 'required' %>
+      </p>
+
+      <p>
+        <%= form.submit %>
+      </p>
+
+    </div>
+
+  </div>
+
+<% end %>
