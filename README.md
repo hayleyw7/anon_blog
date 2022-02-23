@@ -60,4 +60,4 @@ While back and forward browser buttons work, to quickly return home at any time,
 
 ## Contributors
 
-Project completed by Hayley Witherell ([work](https://github.com/hayleyskyland)/[personal](https://github.com/hayleyw7))
+Project completed by [Hayley Witherell](https://github.com/hayleyw7)
