@@ -4,14 +4,17 @@ class Article < ApplicationRecord
 
   has_many :comments
 
-  # declares title value must be present (via `presence: true`)
-    # default for string - value must be >= 1 char
-
+  # declare title & body values must be present
   validates :title, presence: true
+  validates :body, presence: true
 
-  # declares body value must be present
-    # declares body value must be >= 10 chars (via `length: { minimum: 10 }`)
+  # statuses
+  VALID_STATUSES = ['public', 'private', 'archived']
 
-  validates :body, presence: true, length: { minimum: 10 }
+  validates :status, inclusion: { in: VALID_STATUSES }
+
+  def archived?
+    status == 'archived'
+  end
   
 end
