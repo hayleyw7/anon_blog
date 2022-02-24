@@ -413,6 +413,10 @@ select {
     font-size: 12px;
   }
 
+  #article_body {
+    height: 15rem;
+  }
+
 }
 
 .del-red-hover:hover {
