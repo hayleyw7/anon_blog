@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  color: #80A1C1;
+  color: #A77E58;
   font-size: 24px;
   /* border-top: 0.5rem solid white; */
   /* padding-top: 1rem; */
@@ -151,10 +151,9 @@ ul {
 /* create post page, comment list */
 
 .status {
-  text-transform: capitalize;
   font-weight: bold;
-  margin: -0.5rem 0 1.5rem 0;
-  color: #A77E58;
+  margin: -0.5rem 0 2.1rem 0;
+  color: #BA3F1D;
   font-size: 20px;
 }
 
@@ -416,4 +415,19 @@ select {
 
 .del-red-hover:hover {
   background-color: #BA3F1D !important;
+}
+
+.article-actions {
+  margin-left: -2rem;
+  margin-bottom: 0.5rem;
+  margin-top: -0.2rem;
+}
+
+#addCommentBtn {
+  margin-left: 0.3rem;
+}
+
+.create-comment-btn {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }

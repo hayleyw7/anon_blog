@@ -9,7 +9,7 @@
   <p class="article-p"><%= @article.body %></p>
 
   <% if @article.status === "archived" %>
-    <p class='status'><%= @article.status %></p>
+    <p class='status'>[<%= @article.status %>]</p>
   <% end %>
 
   <ul class='article-actions'>
