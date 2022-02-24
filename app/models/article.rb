@@ -1,6 +1,4 @@
 class Article < ApplicationRecord
-
-  # include Visible module
   include Visible
 
   # other side of Comment model assocation (models/comment.rb)

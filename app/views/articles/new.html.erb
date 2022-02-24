@@ -19,6 +19,11 @@
     </div>
 
     <div>
+      <%= form.label :status, 'Article Status', class: 'update-status' %><br>
+      <%= form.select :status, ['public', 'archived'], selected: 'public', class: 'status-dropdown' %>
+  </div>
+
+    <div>
       <%= form.submit %>
     </div>
   </div>
