@@ -63,19 +63,18 @@ h3 {
   padding-right: 0.4rem;
 }
 
-a:hover {
-  /* transform: scale(1.5); */
-  color: #BA3F1D;
-}
-
 .article-links,
 label {
   font-weight: bold;
-  color: #A77E58 !important;
+}
+
+.article-links {
+  margin: 0 0.25rem 0 0.25rem;
 }
 
 input[name="commit"],
-button {
+button,
+.article-links {
   border-radius: 0.6rem;
   font-weight: bold;
   background-color: #A77E58;
@@ -86,7 +85,8 @@ button {
 }
 
 input[type="submit"]:hover,
-button:hover {
+button:hover,
+a:hover {
   background-color: #80A1C1;
 }
 
@@ -101,6 +101,29 @@ ul {
 /*********** PAGES ***********/
 
 /* home page */
+
+.article-name-list {
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+.home-list {
+  background-color: #EEE3AB;
+  margin: 0.25rem 5rem 1rem 5rem;
+  padding: 1rem 0 0 0;
+  border-radius: 1rem;
+}
+
+.home-links {
+  text-decoration: none;
+  font-weight: bold;
+  color: #A77E58 !important;
+}
+
+.home-links:hover {
+  color: #BA3F1D !important;
+  background: none;
+}
 
 .article-count {
   display: flex;
@@ -117,19 +140,12 @@ ul {
   font-size: 14px;
 }
 
-.article-name-list {
-  padding-bottom: 1rem;
-  font-size: 20px;
-}
-
-.home-list {
-  background-color: #EEE3AB;
-  margin: 0.25rem 5rem 1rem 5rem;
-  padding: 1rem 0 0 0;
-  border-radius: 1rem;
-}
-
 /* create post page, comment list */
+
+.status {
+  text-transform: capitalize;
+  color: white;
+}
 
 #article_title,
 #article_body,
@@ -164,6 +180,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .comment {

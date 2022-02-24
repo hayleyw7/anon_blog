@@ -8,6 +8,8 @@
 
   <p class="article-p"><%= @article.body %></p>
 
+  <p class='status'><%= @article.status %></p>
+
   <ul class='article-actions'>
 
     <li><%= link_to "Edit", edit_article_path(@article), :class => "article-links" %></li>
