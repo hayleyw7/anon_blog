@@ -4,7 +4,7 @@ class Article < ApplicationRecord
   include Visible
 
   # other side of Comment model assocation (models/comment.rb)
-  has_many :comments
+  has_many :comments, dependent: :destroy
 
   # declare title & body values must be present
   validates :title, presence: true
