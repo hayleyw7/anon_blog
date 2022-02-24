@@ -8,6 +8,8 @@
 
 <! –– # `<% %>` = "evaluate enclosed ruby code & output returned value" ––>
 
+<! –– # Our blog has <%= Article.public_count %> articles and counting! ––>
+
 <ul class='home-list'>
   <% @articles.each do |article| %>
 
@@ -23,7 +25,6 @@
     <% end %>
 
   <% end %>
-  
 </ul>
 
 <%= button_to "Create A Post", new_article_path, :method => "get" %>
