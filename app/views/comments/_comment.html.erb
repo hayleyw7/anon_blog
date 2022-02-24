@@ -8,6 +8,17 @@
 
     <p class='comment-body'>
       <%= comment.body %>
+
+      <%=
+        link_to "[ Delete ]",
+        [comment.article, comment],
+        data: {
+          turbo_method: :delete,
+          turbo_confirm: "Are you sure?"
+        },
+        class: "article-links del-comment-btn" 
+      %>
+
     </p>
 
   </article>

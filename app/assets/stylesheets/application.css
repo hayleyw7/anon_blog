@@ -47,8 +47,8 @@ h2 {
 }
 
 h3 {
-  color: #A77E58;
-  font-size: 20px;
+  color: #80A1C1;
+  font-size: 24px;
   /* border-top: 0.5rem solid white; */
   /* padding-top: 1rem; */
   margin-bottom: 0.5rem;
@@ -280,6 +280,14 @@ label[for="comment_body"] {
 h1,
 .title {
   color: white !important;
+}
+
+.del-comment-btn {
+  font-size: 11px !important;
+  background: none !important;
+  color: #A77E58 !important;
+  margin-left: -0.5rem !important;
+  /* font-weight: normal; */
 }
 
 /* status */
