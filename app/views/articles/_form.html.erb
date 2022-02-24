@@ -22,8 +22,8 @@
     </div>
 
     <div>
-      <%= form.label :status, 'Update Status' %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+      <%= form.label :status, 'Article Status', class: 'update-status' %><br>
+      <%= form.select :status, ['public', 'archived'], selected: 'public', class: 'status-dropdown' %>
     </div>
 
     <div>

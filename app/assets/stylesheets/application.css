@@ -68,6 +68,10 @@ label {
   font-weight: bold;
 }
 
+label {
+  color: #A77E58;
+}
+
 .article-links {
   margin: 0 0.25rem 0 0.25rem;
 }
@@ -278,6 +282,24 @@ h1,
   color: white !important;
 }
 
+/* status */
+
+.update-status {
+  color: #A77E58;
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+select {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  /* text-align: center; */
+  border: 0;
+}
+
+/* responsive */
+
 @media only screen and (max-width: 800px) {
 
   h1,
@@ -368,5 +390,9 @@ h1,
   .indiv-count {
     font-size: 11px;
     padding-top: 0.3rem;
+  }
+
+  select {
+    font-size: 12px;
   }
 }
