@@ -144,6 +144,10 @@ ul {
   font-size: 14px;
 }
 
+.indiv-num {
+  color: #80A1C1;
+}
+
 /* create post page, comment list */
 
 .status {
@@ -283,11 +287,15 @@ h1,
 }
 
 .del-comment-btn {
-  font-size: 11px !important;
+  /* font-size: 11px !important; */
   background: none !important;
   color: #A77E58 !important;
   margin-left: -0.5rem !important;
-  /* font-weight: normal; */
+  font-weight: normal;
+}
+
+.del-comment-btn:hover {
+  color: #BA3F1D !important;
 }
 
 /* status */
@@ -403,4 +411,8 @@ select {
   select {
     font-size: 12px;
   }
+}
+
+.del-red-hover:hover {
+  background-color: #BA3F1D !important;
 }

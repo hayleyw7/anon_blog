@@ -10,11 +10,11 @@
       <%= comment.body %>
 
       <%=
-        link_to "[ Delete ]",
+        link_to "[x]",
         [comment.article, comment],
         data: {
           turbo_method: :delete,
-          turbo_confirm: "Are you sure?"
+          turbo_confirm: "Are you sure that you want to permanantly delete this comment?"
         },
         class: "article-links del-comment-btn" 
       %>

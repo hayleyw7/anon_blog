@@ -16,8 +16,8 @@
 
     <li><%= link_to "Delete", article_path(@article), data: {
       turbo_method: :delete,
-      turbo_confirm: "Are you sure?"
-    }, :class => "article-links"%></li>
+      turbo_confirm: "Are you sure that you want to permanantly delete this article?"
+    }, :class => "article-links del-red-hover"%></li>
 
   </ul>
 </div>

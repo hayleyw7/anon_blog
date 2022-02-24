@@ -28,7 +28,9 @@
 <%= button_to "Create A Post", new_article_path, :method => "get" %>
 
 <article class='article-count'>
-  <p class='indiv-count'>Public: <%= Article.public_count %></p>
-  <p class='indiv-count'>|</p>
-  <p class='indiv-count'>Archive: <%= Article.archived_count %></p>
+  <p class='indiv-count'>Public:</p>
+  <p class='indiv-count indiv-num'><%= Article.public_count %></p>
+  <p class='indiv-count indiv-divider'> </p>
+  <p class='indiv-count'>Archive:</p>
+  <p class='indiv-count indiv-num'><%= Article.archived_count %></p>
 </article>
