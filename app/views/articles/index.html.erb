@@ -8,10 +8,6 @@
 
 <! –– # `<% %>` = "evaluate enclosed ruby code & output returned value" ––>
 
-<article class='article-count'>
-  <p><%= Article.public_count %> public articles</p>
-</article>
-
 <ul class='home-list'>
   <% @articles.each do |article| %>
 
@@ -30,3 +26,11 @@
 </ul>
 
 <%= button_to "Create A Post", new_article_path, :method => "get" %>
+
+<article class='article-count'>
+  <p class='indiv-count'>Public: <%= Article.public_count %></p>
+  <p class='indiv-count'>|</p>
+  <p class='indiv-count'>Private: <%= Article.private_count %></p>
+  <p class='indiv-count'>|</p>
+  <p class='indiv-count'>Archive: <%= Article.archived_count %></p>
+</article>

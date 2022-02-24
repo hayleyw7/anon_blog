@@ -102,6 +102,21 @@ ul {
 
 /* home page */
 
+.article-count {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #A77E58;
+  font-weight: bold;
+}
+
+.indiv-count {
+  padding: 0.15rem 0.2rem 0 0.2rem;
+  font-size: 14px;
+}
+
 .article-name-list {
   padding-bottom: 1rem;
   font-size: 20px;
@@ -304,5 +319,10 @@ h1,
 
   .commenter {
     margin-bottom: 0rem;
+  }
+
+  .indiv-count {
+    font-size: 11px;
+    padding-top: 0.3rem;
   }
 }
