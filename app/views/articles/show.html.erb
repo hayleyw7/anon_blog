@@ -8,7 +8,9 @@
 
   <p class="article-p"><%= @article.body %></p>
 
-  <p class='status'><%= @article.status %></p>
+  <% if @article.status === "archived" %>
+    <p class='status'><%= @article.status %></p>
+  <% end %>
 
   <ul class='article-actions'>
 
