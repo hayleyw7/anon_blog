@@ -426,8 +426,13 @@ select {
 
 #addCommentBtn {
   margin-left: 0.2rem !important;
+}
 
 .create-comment-btn {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+
+.comment-body {
+  margin-left: 1.5rem;
 }
