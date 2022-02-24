@@ -8,7 +8,9 @@
 
 <! –– # `<% %>` = "evaluate enclosed ruby code & output returned value" ––>
 
-Our blog has <%= Article.public_count %> articles and counting!
+<article class='article-count'>
+  <p><%= Article.public_count %> public articles</p>
+</article>
 
 <ul class='home-list'>
   <% @articles.each do |article| %>
