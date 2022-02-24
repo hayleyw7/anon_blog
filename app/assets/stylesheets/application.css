@@ -330,7 +330,7 @@ select {
 
   h1,
   .title {
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 1rem;
     font-family: Arial;
   }
@@ -412,6 +412,7 @@ select {
   select {
     font-size: 12px;
   }
+
 }
 
 .del-red-hover:hover {
@@ -419,14 +420,12 @@ select {
 }
 
 .article-actions {
-  margin-left: -2rem;
   margin-bottom: 0.5rem;
   margin-top: -0.2rem;
 }
 
 #addCommentBtn {
-  margin-left: 0.3rem;
-}
+  margin-left: 0.2rem !important;
 
 .create-comment-btn {
   margin-top: 1.2rem;
