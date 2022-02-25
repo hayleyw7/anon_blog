@@ -24,7 +24,7 @@ The user will be presented a list of existing blog post titles.
 
 If they click on an title, they are directed to that post's page, where they can read, edit, or delete it, or they can read or add comments.
 
-If they click the "Create A Post" button, they are provided a form to create their own, new post.
+If they click the "Create A Post" button, they are provided a form to create their own article.
 
 While back and forward browser buttons work, to quickly return home at any time, the user can also simply click the the website title in the header.
 
@@ -35,10 +35,7 @@ While back and forward browser buttons work, to quickly return home at any time,
 <p>
   <img src="./app/assets/images/desktop-home.png" alt="desktop home screenshot" width="200"/>
   <img src="./app/assets/images/desktop-new.png" alt="desktop new post screenshot" width="200"/>
-</p>
-<p>
   <img src="./app/assets/images/desktop-article.png" alt="desktop article screenshot" width="200"/>
-  <img src="./app/assets/images/desktop-comment.png" alt="desktop comment screenshot" width="200"/>
 </p>
 
 ### Mobile
@@ -46,10 +43,7 @@ While back and forward browser buttons work, to quickly return home at any time,
 <p>
   <img src="./app/assets/images/mobile-home.png" alt="mobile home screenshot" width="200"/>
   <img src="./app/assets/images/mobile-new.png" alt="mobile new post screenshot" width="200"/>
-</p>
-<p>
   <img src="./app/assets/images/mobile-article.png" alt="mobile article screenshot" width="200"/>
-  <img src="./app/assets/images/mobile-comment.png" alt="mobile comment screenshot" width="200"/>
 </p>
 
 ## Future additions
