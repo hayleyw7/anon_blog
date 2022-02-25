@@ -41,9 +41,9 @@ While back and forward browser buttons work, to quickly return home at any time,
 ### Mobile
 
 <p>
-  <img src="./app/assets/images/mobile-home.png" alt="mobile home screenshot" height="300"/>
-  <img src="./app/assets/images/mobile-article.png" alt="mobile article screenshot" height="300"/>
-  <img src="./app/assets/images/mobile-new.png" alt="mobile new post screenshot" height="300"/>
+  <img src="./app/assets/images/mobile-home.png" alt="mobile home screenshot" height="400"/>
+  <img src="./app/assets/images/mobile-article.png" alt="mobile article screenshot" height="400"/>
+  <img src="./app/assets/images/mobile-new.png" alt="mobile new post screenshot" height="400"/>
 </p>
 
 ## Future additions
