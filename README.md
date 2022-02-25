@@ -33,17 +33,17 @@ While back and forward browser buttons work, to quickly return home at any time,
 ### Desktop
 
 <p>
-  <img src="./app/assets/images/desktop-home.png" alt="desktop home screenshot" width="200"/>
-  <img src="./app/assets/images/desktop-article.png" alt="desktop article screenshot" width="200"/>
-  <img src="./app/assets/images/desktop-new.png" alt="desktop new post screenshot" width="200"/>
+  <img src="./app/assets/images/desktop-home.png" alt="desktop home screenshot" height="200"/>
+  <img src="./app/assets/images/desktop-article.png" alt="desktop article screenshot" height="200"/>
+  <img src="./app/assets/images/desktop-new.png" alt="desktop new post screenshot" height="200"/>
 </p>
 
 ### Mobile
 
 <p>
-  <img src="./app/assets/images/mobile-home.png" alt="mobile home screenshot" width="200"/>
-  <img src="./app/assets/images/mobile-article.png" alt="mobile article screenshot" width="200"/>
-  <img src="./app/assets/images/mobile-new.png" alt="mobile new post screenshot" width="200"/>
+  <img src="./app/assets/images/mobile-home.png" alt="mobile home screenshot" height="300"/>
+  <img src="./app/assets/images/mobile-article.png" alt="mobile article screenshot" height="300"/>
+  <img src="./app/assets/images/mobile-new.png" alt="mobile new post screenshot" height="300"/>
 </p>
 
 ## Future additions
