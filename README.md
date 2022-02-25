@@ -48,9 +48,9 @@ While back and forward browser buttons work, to quickly return home at any time,
 
 ## Future additions
 
-* I will implement edit & deletion for comments.
+* I will implement an edit button for comments.
 
-* I will add an "undo" button.
+* I will allow "like" buttons".
 
 ## Contributors
 
