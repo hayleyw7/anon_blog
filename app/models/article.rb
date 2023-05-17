@@ -1,17 +1,11 @@
 class Article < ApplicationRecord
+  include Visible
 
   # other side of Comment model assocation (models/comment.rb)
+  has_many :comments, dependent: :destroy
 
-  has_many :comments
-
-  # declares title value must be present (via `presence: true`)
-    # default for string - value must be >= 1 char
-
+  # declare title & body values must be present
   validates :title, presence: true
-
-  # declares body value must be present
-    # declares body value must be >= 10 chars (via `length: { minimum: 10 }`)
-
-  validates :body, presence: true, length: { minimum: 10 }
+  validates :body, presence: true
   
 end

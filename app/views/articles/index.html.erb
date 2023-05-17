@@ -10,14 +10,27 @@
 
 <ul class='home-list'>
   <% @articles.each do |article| %>
-    <li class='article-name-list'>
 
-    <! –– # renders article title as a link to show.html.erb ––>
-    
-    <%= link_to article.title, article, class: "article-links" %>
-      
-    </li>
+    <% unless article.archived? %>
+
+      <li class='article-name-list'>
+
+        <! –– # render article title as a link to show.html.erb ––>
+        <%= link_to article.title, article, class: "home-links" %>
+        
+      </li>
+
+    <% end %>
+
   <% end %>
 </ul>
 
-<%= button_to "Create A Post", "/articles/new", :method => "get" %>
+<%= button_to "Create A Post", new_article_path, :method => "get" %>
+
+<article class='article-count'>
+  <p class='indiv-count'>Public:</p>
+  <p class='indiv-count indiv-num'><%= Article.public_count %></p>
+  <p class='indiv-count indiv-divider'> </p>
+  <p class='indiv-count'>Archive:</p>
+  <p class='indiv-count indiv-num'><%= Article.archived_count %></p>
+</article>

@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   color: #A77E58;
-  font-size: 20px;
+  font-size: 24px;
   /* border-top: 0.5rem solid white; */
   /* padding-top: 1rem; */
   margin-bottom: 0.5rem;
@@ -63,19 +63,22 @@ h3 {
   padding-right: 0.4rem;
 }
 
-a:hover {
-  /* transform: scale(1.5); */
-  color: #BA3F1D;
-}
-
 .article-links,
 label {
   font-weight: bold;
-  color: #A77E58 !important;
+}
+
+label {
+  color: #A77E58;
+}
+
+.article-links {
+  margin: 0 0.25rem 0 0.25rem;
 }
 
 input[name="commit"],
-button {
+button,
+.article-links {
   border-radius: 0.6rem;
   font-weight: bold;
   background-color: #A77E58;
@@ -86,7 +89,8 @@ button {
 }
 
 input[type="submit"]:hover,
-button:hover {
+button:hover,
+a:hover {
   background-color: #80A1C1;
 }
 
@@ -114,7 +118,44 @@ ul {
   border-radius: 1rem;
 }
 
+.home-links {
+  text-decoration: none;
+  font-weight: bold;
+  color: #A77E58 !important;
+}
+
+.home-links:hover {
+  color: #BA3F1D !important;
+  background: none;
+}
+
+.article-count {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #A77E58;
+  font-weight: bold;
+}
+
+.indiv-count {
+  padding: 0.15rem 0.2rem 0 0.2rem;
+  font-size: 14px;
+}
+
+.indiv-num {
+  color: #80A1C1;
+}
+
 /* create post page, comment list */
+
+.status {
+  font-weight: bold;
+  margin: -0.5rem 0 2.1rem 0;
+  color: #BA3F1D;
+  font-size: 20px;
+}
 
 #article_title,
 #article_body,
@@ -138,6 +179,7 @@ ul {
 
 .article-p {
   font-size: 20px;
+  margin-bottom: 2rem;
 }
 
 #comment_body {
@@ -149,6 +191,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .comment {
@@ -230,8 +273,12 @@ label[for="comment_body"] {
 .article-container {
   background-color:	#CCDDB7;
   margin: 0.25rem 5rem 1.2rem 5rem;
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
   border-radius: 1rem;
+}
+
+.everything-comments {
+  padding: 0 3rem 0 3rem;
 }
 
 h1,
@@ -239,12 +286,53 @@ h1,
   color: white !important;
 }
 
+.del-comment-btn {
+  /* font-size: 11px !important; */
+  background: none !important;
+  color: #A77E58 !important;
+  margin-left: -0.5rem !important;
+  font-weight: normal;
+}
+
+.del-comment-btn:hover {
+  color: #BA3F1D !important;
+}
+
+/* status */
+
+.update-status {
+  color: #A77E58;
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+select {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  /* text-align: center; */
+  border: 0;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 800px) {
+
+  h1,
+  .title {
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
 
   h1,
   .title {
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 1rem;
+    font-family: Arial;
   }
 
   h2 {
@@ -255,7 +343,8 @@ h1,
     font-size: 18px;
   }
 
- .article-p {
+ .article-p,
+ .status {
     font-size: 16px;
   }
 
@@ -263,6 +352,15 @@ h1,
     font-size: 16px;
     margin-top: -0.1rem !important;
     margin-bottom: -0.1rem !important;
+  }
+
+  .article-links,
+  button {
+    font-size: 12px;
+  }
+
+  .article-actions {
+    margin-top: -0.5rem !important;
   }
 
   p {
@@ -305,4 +403,40 @@ h1,
   .commenter {
     margin-bottom: 0rem;
   }
+
+  .indiv-count {
+    font-size: 11px;
+    padding-top: 0.3rem;
+  }
+
+  select {
+    font-size: 12px;
+  }
+
+  #article_body {
+    height: 15rem;
+  }
+
+}
+
+.del-red-hover:hover {
+  background-color: #BA3F1D !important;
+}
+
+.article-actions {
+  margin-bottom: 0.5rem;
+  margin-top: -0.2rem;
+}
+
+#addCommentBtn {
+  margin-left: 0.2rem !important;
+}
+
+.create-comment-btn {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.comment-body {
+  margin-left: 1.2rem;
 }
