@@ -2,7 +2,7 @@
 
 Anonymous Community Blog is an interactive, conceptual art experiment, where anyone online can create, edit, and delete blog posts, as well as leave comments.
 
-[It can be accessed here.](https://rails-fun.herokuapp.com/)
+[It can be accessed here.](https://rails-fun.herokuapp.com/) (Update: App is currently offline due to Heroku pricing model updates.)
 
 ## Motivation
 
